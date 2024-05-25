@@ -1,0 +1,1 @@
+Airlink Virtual is a dynamic and innovative virtual airline community partnered with VATMENA and registered with VATSIM, offering a realistic aviation experience with a diverse fleet, engaging global events, and extensive airline options. Join us to explore the skies, connect with a passionate community, and enjoy authentic virtual flying. Visit Airlink Virtual to get started.
