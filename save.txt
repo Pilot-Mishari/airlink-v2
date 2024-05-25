@@ -1,0 +1,4 @@
+<div class="mySlides fade">
+            <img src="/images/advertisement/ad2.png" style="width: 100%;" alt="a/c">
+            <div class="caption">Community Events and Competitions</div>
+        </div>
