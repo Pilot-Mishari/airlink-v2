@@ -4,7 +4,7 @@ function slides() {
     var widthB = window.innerWidth;
     var heightB = window.innerHeight;
 
-    console.log(widthB, heightB);
+    console.log('Size is ' + widthB, heightB);
 
     var images = document.getElementsByClassName('images');
     for (var i = 0; i < images.length; i++) {

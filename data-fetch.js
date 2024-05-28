@@ -1,5 +1,5 @@
 const serviceKey = "okas12310alaksjs";
-const url = "https://crew.airlinkvirtual.com";
+const url = "https://crew.airlinkvirtual.com/";
 
 const headers = {
     'Content-Type': 'application/json',
