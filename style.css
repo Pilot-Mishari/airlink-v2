@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body {
-  background-color: #292929;
   font-family: "Rubik", sans-serif;
   margin: 0;
   padding: 0;
@@ -26,22 +26,23 @@ header {
 
 nav {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 nav ul {
   list-style-type: none;
-  text-align: left;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul li {
-  position: relative;
   display: inline-block;
-  list-style: none;
   margin: 0 20px;
-  cursor: pointer;
 }
 
 nav ul li a {
@@ -49,23 +50,18 @@ nav ul li a {
   color: #fff;
   font-weight: bold;
   transition: color 0.3s ease;
-  width: auto;
 }
 
 nav ul li a:hover {
   color: #BA492B;
 }
 
-.nav-content{
-  width: 100%;
-  text-align: center;
-  float: center;
-  transform: translateX(-550px);
-}
-
-
 .stats {
   color: whitesmoke;
+  text-align: center;
+  margin: 50px 0;
+  width: 100%;
+  height: auto;
 }
 
 .numbers {
@@ -111,7 +107,6 @@ nav ul li a:hover {
   text-align: center;
 }
 
-
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -120,11 +115,9 @@ nav ul li a:hover {
   top: 0;
 }
 
-
 .active {
   background-color: #717171;
 }
-
 
 .fade {
   animation-name: fade;
@@ -138,4 +131,143 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+.text-container {
+  background-color: #292929;
+  color: whitesmoke;
+  width: auto;
+  padding: 8px;
+}
+
+.navImage {
+  margin-right: 20px;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.stats {
+  color: #292929;
+  padding: 8px;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.stat-img {
+  width: 200px;
+  height: auto;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-text {
+  font-size: 48px;
+  color: #292929;
+  text-align: center;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.airline-stat {
+  z-index: 1;
+  transform: translateY(30px);
+}
+
+.pilot-stat {
+  transform: translateY(-25px);
+}
+
+.black {
+  background-color: #292929;
+}
+
+.other {
+  background-color: #BA492B;
+}
+
+.discord-container {
+  width: 400px;
+}
+
+.adv-images {
+  width: 400px;
+  height: 200px;
+  z-index: 2;
+  margin: 1rem;
+}
+
+.discord-corner {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.discord-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlights {
+  color: #BA492B;
+  font-family: "Nunito", sans-serif;
+  font-size: 48px;
+  max-width: 400px;
+  margin-left: 20px; 
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #BA492B;
+  transition: .3s;
+}
+
+a:hover {
+  color: whitesmoke;
+  transition: .3s;
+}
+
+.footerArea {
+  width: 100%;
+}
+
+.footerStuff-container {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.footer-items {
+  margin-top: 8px;
+}
+
+.inline-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
