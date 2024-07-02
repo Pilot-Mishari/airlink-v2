@@ -1,46 +1,17 @@
-let slideIndex = 0;
 const counterDuration = 3000
 
-function slides() {
-    const widthB = window.innerWidth;
-    const heightB = window.innerHeight;
+let currentIndex = 0;
 
-    console.log('Size is ' + widthB, heightB);
-
-    const images = document.getElementsByClassName('mySlides');
-    for (let i = 0; i < images.length; i++) {
-        images[i].style.width = widthB + 'px';
-        images[i].style.height = heightB + 'px';
-    }
-    
-    document.querySelector('.slideshow-container').style.height = heightB + 'px';
+function slideImages() {
+    const slides = document.querySelector('.slides');
+    const images = document.querySelectorAll('.slides img');
+    currentIndex = (currentIndex + 1) % images.length;
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-function showSlides() {
-  const slides = document.getElementsByClassName("mySlides");
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3500);
-}
+setInterval(slideImages, 5000);
 
-function animateValue(obj, start, end, duration) {
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    obj.innerHTML = Math.floor(progress * (end - start) + start);
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-}
 
-window.addEventListener('resize', slides);
 
 document.addEventListener('DOMContentLoaded', (event) => {
     slides();
